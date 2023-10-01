@@ -22,7 +22,9 @@ var link = document.createElement('link');
 // Create a function to load the React app bundle
 function loadReactApp() {
 
-  const reactAppURL = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.js';
+  // const reactAppURL = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.js';
+  // upload to jsDelivr  https://www.jsdelivr.com/github
+  const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot.js';
   
   console.log('Loading React app from:', reactAppURL);
   if(!document.getElementById('root')){
