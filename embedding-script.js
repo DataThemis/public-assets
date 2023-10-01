@@ -1,22 +1,24 @@
 
 // Customize the script as needed for embedding
-    const rootContainer = document.getElementById('root');
-    if (!rootContainer) {
+const rootContainer = document.getElementById('root');
+if (!rootContainer) {
 
-      console.log("creating root");
-      // If the 'root' element doesn't exist, create it and add it to the body
-      const newRootContainer = document.createElement('div');
-      newRootContainer.id = 'root';
-      document.body.appendChild(newRootContainer);
-    }
+  console.log("creating root");
+  // If the 'root' element doesn't exist, create it and add it to the body
+  const newRootContainer = document.createElement('div');
+  newRootContainer.id = 'root';
+  document.body.appendChild(newRootContainer);
+}
 
 var link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
-  link.href = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.css';
+link.rel = 'stylesheet';
+link.type = 'text/css';
+// link.href = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.css';
+// upload link above to  jsDelivr  https://www.jsdelivr.com/github
+link.href = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot.css';
 
-  // Append the <link> element to the <head> section of the document
-  document.head.appendChild(link);
+// Append the <link> element to the <head> section of the document
+document.head.appendChild(link);
 
 
 // Create a function to load the React app bundle
@@ -25,7 +27,7 @@ function loadReactApp() {
   // const reactAppURL = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.js';
   // upload to jsDelivr  https://www.jsdelivr.com/github
   const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot.js';
-  
+
   console.log('Loading React app from:', reactAppURL);
   if(!document.getElementById('root')){
     console.log("root not yet loaded");
@@ -59,7 +61,7 @@ function loadReactApp() {
 // Load the React app when the page is ready
 if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
   // If the page is already loaded or interactive, load the React app immediately
-  
+
   loadReactApp();
 } else {
   // If the page is still loading, wait for the 'DOMContentLoaded' event before loading the React app
