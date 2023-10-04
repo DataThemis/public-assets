@@ -15,7 +15,7 @@ link.rel = 'stylesheet';
 link.type = 'text/css';
 // link.href = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.css';
 // upload link above to  jsDelivr  https://www.jsdelivr.com/github
-link.href = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot-1.css';
+link.href = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot-2.css';
 
 // Append the <link> element to the <head> section of the document
 document.head.appendChild(link);
@@ -26,7 +26,7 @@ function loadReactApp() {
 
   // const reactAppURL = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.js';
   // upload to jsDelivr  https://www.jsdelivr.com/github
-  const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot-1.js';
+  const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot-2.js';
 
   console.log('Loading React app from:', reactAppURL);
   if(!document.getElementById('root')){
