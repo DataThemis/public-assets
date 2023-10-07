@@ -15,7 +15,7 @@ function loadReactApp() {
 
   // const reactAppURL = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.js';
   // upload to jsDelivr  https://www.jsdelivr.com/github
-  const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot.js';
+  const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot3.js';
 
   console.log('Loading React app from:', reactAppURL);
   if(!document.getElementById('root')){
