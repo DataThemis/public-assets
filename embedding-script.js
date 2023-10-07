@@ -10,23 +10,12 @@ if (!rootContainer) {
   document.body.appendChild(newRootContainer);
 }
 
-var link = document.createElement('link');
-link.rel = 'stylesheet';
-link.type = 'text/css';
-// link.href = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.css';
-// upload link above to  jsDelivr  https://www.jsdelivr.com/github
-link.href = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot-2.css';
-
-// Append the <link> element to the <head> section of the document
-document.head.appendChild(link);
-
-
 // Create a function to load the React app bundle
 function loadReactApp() {
 
   // const reactAppURL = 'https://raw.githubusercontent.com/DataThemis/public-assets/data-themis-homepage/chat-bot.js';
   // upload to jsDelivr  https://www.jsdelivr.com/github
-  const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot-2.js';
+  const reactAppURL = 'https://cdn.jsdelivr.net/gh/DataThemis/public-assets@data-themis-homepage/chat-bot.js';
 
   console.log('Loading React app from:', reactAppURL);
   if(!document.getElementById('root')){
@@ -42,12 +31,12 @@ function loadReactApp() {
 
   // Set up an event handler for when the script is loaded successfully
   script.onload = () => {
-    console.log('React app script has loaded successfully.');
+    console.log('Chatbot has loaded successfully.');
   };
 
   // Set up an event handler for when the script fails to load
   script.onerror = () => {
-    console.error('Failed to load the React app script.');
+    console.error('Failed to load the chatbot.');
     // Create and display an error message element
     const errorMessage = document.createElement('p');
     errorMessage.textContent = 'Failed to load the React app script. Please try again later.';
